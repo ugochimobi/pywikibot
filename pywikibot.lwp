@@ -1,0 +1,17 @@
+#LWP-Cookies-2.0
+Set-Cookie3: centralauth_Session=3218848c3781a622aa523387ca56cfd9; path="/"; domain=".miraheze.org"; path_spec; domain_dot; secure; discard; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: centralauth_Token=00362aebe4ea18e2a8ff06d06a440100; path="/"; domain=".miraheze.org"; path_spec; domain_dot; secure; expires="2022-09-01 09:05:02Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: centralauth_User=ChiBot; path="/"; domain=".miraheze.org"; path_spec; domain_dot; secure; expires="2022-09-01 09:05:02Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: centralauth_ss0-Token=00362aebe4ea18e2a8ff06d06a440100; path="/"; domain=".miraheze.org"; path_spec; domain_dot; secure; expires="2022-09-01 09:05:02Z"; HttpOnly=None; version=0
+Set-Cookie3: centralauth_ss0-User=ChiBot; path="/"; domain=".miraheze.org"; path_spec; domain_dot; secure; expires="2022-09-01 09:05:02Z"; HttpOnly=None; version=0
+Set-Cookie3: ss0-centralauth_Session=3218848c3781a622aa523387ca56cfd9; path="/"; domain=".miraheze.org"; path_spec; domain_dot; secure; discard; HttpOnly=None; version=0
+Set-Cookie3: UseCDNCache=false; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; expires="2022-03-05 09:05:12Z"; HttpOnly=None; version=0
+Set-Cookie3: UseDC=master; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; expires="2022-03-05 09:05:12Z"; HttpOnly=None; version=0
+Set-Cookie3: cpPosIndex="1%401646471155%233b2969c5f2d374c66078ed257d549c30"; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; expires="2022-03-05 09:05:12Z"; HttpOnly=None; version=0
+Set-Cookie3: gratispaideiawikiUserID=10; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; expires="2022-09-01 09:05:02Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: gratispaideiawikiUserName=ChiBot; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; expires="2022-09-01 09:05:02Z"; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: gratispaideiawiki_session=uacskh5pvu1pnd93hbo16ccnfnvtcl1k; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; discard; HttpOnly=None; SameSite=None; version=0
+Set-Cookie3: gratispaideiawikiss0-UserID=10; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; expires="2022-09-01 09:05:02Z"; HttpOnly=None; version=0
+Set-Cookie3: gratispaideiawikiss0-UserName=ChiBot; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; expires="2022-09-01 09:05:02Z"; HttpOnly=None; version=0
+Set-Cookie3: loginnotify_prevlogins="2022-18jh1i-o9mmp8cu6q2ybcg1ks3uy9ol5gjtvma"; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; expires="2022-09-01 09:05:02Z"; HttpOnly=None; version=0
+Set-Cookie3: ss0-gratispaideiawiki_session=uacskh5pvu1pnd93hbo16ccnfnvtcl1k; path="/"; domain="gratispaideia.miraheze.org"; path_spec; secure; discard; HttpOnly=None; version=0

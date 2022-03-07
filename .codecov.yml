@@ -1,0 +1,39 @@
+codecov:
+  bot: jayvdb
+
+coverage:
+  status:
+    project:
+      default:
+        enabled: yes
+    patch:
+      default:
+        enabled: yes
+    changes:
+      default:
+        enabled: yes
+
+  ignore:
+    - pywikibot/backports.py
+    - pywikibot/daemonize.py
+    - pywikibot/families/__init__.py
+    - scripts/archive/
+    - scripts/userscripts/
+    - scripts/maintenance/colors.py
+    - scripts/maintenance/make_i18n_dict.py
+    - scripts/maintenance/preload_sites.py
+    - scripts/maintenance/sorting_order.py
+    - scripts/maintenance/update_linktrails.py
+    - scripts/maintenance/wikimedia_sites.py
+    - tests/archive/
+    - tests/pwb/
+
+  notify:
+    irc:
+      default:
+        server: libera.chat
+        channel: pywikibot
+
+    gitter:
+      default:
+        url: https://webhooks.gitter.im/e/f312b840da1c40d9f4be
