@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:ontolex="http://www.w3.org/ns/lemon/ontolex#" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:wikibase="http://wikiba.se/ontology#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:schema="http://schema.org/" xmlns:cc="http://creativecommons.org/ns#" xmlns:geo="http://www.opengis.net/ont/geosparql#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:wd="https://famedata.org/entity/" xmlns:data="https://famedata.org/wiki/Special:EntityData/" xmlns:s="https://famedata.org/entity/statement/" xmlns:ref="https://famedata.org/reference/" xmlns:v="https://famedata.org/value/" xmlns:wdt="https://famedata.org/prop/direct/" xmlns:wdtn="https://famedata.org/prop/direct-normalized/" xmlns:p="https://famedata.org/prop/" xmlns:ps="https://famedata.org/prop/statement/" xmlns:psv="https://famedata.org/prop/statement/value/" xmlns:psn="https://famedata.org/prop/statement/value-normalized/" xmlns:pq="https://famedata.org/prop/qualifier/" xmlns:pqv="https://famedata.org/prop/qualifier/value/" xmlns:pqn="https://famedata.org/prop/qualifier/value-normalized/" xmlns:pr="https://famedata.org/prop/reference/" xmlns:prv="https://famedata.org/prop/reference/value/" xmlns:prn="https://famedata.org/prop/reference/value-normalized/" xmlns:wdno="https://famedata.org/prop/novalue/">
+	<rdf:Description rdf:about="https://famedata.org/wiki/Special:EntityData/Q511">
+		<rdf:type rdf:resource="http://schema.org/Dataset"/>
+		<schema:about rdf:resource="https://famedata.org/entity/Q511"/>
+		<cc:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/>
+		<schema:softwareVersion>1.0.0</schema:softwareVersion>
+		<schema:version rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5995</schema:version>
+		<schema:dateModified rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-18T21:34:02Z</schema:dateModified>
+		<wikibase:statements rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</wikibase:statements>
+		<wikibase:identifiers rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</wikibase:identifiers>
+		<wikibase:sitelinks rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</wikibase:sitelinks>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/entity/Q511">
+		<rdf:type rdf:resource="http://wikiba.se/ontology#Item"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://en.famepedia.org/wiki/Main_Page">
+		<rdf:type rdf:resource="http://schema.org/Article"/>
+		<schema:about rdf:resource="https://famedata.org/entity/Q511"/>
+		<schema:inLanguage>en</schema:inLanguage>
+		<schema:isPartOf rdf:resource="https://en.famepedia.org/"/>
+		<schema:name xml:lang="en">Main Page</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://en.famepedia.org/">
+		<wikibase:wikiGroup>miraheze</wikibase:wikiGroup>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/entity/Q511">
+		<rdfs:label xml:lang="en">Main Page</rdfs:label>
+		<skos:prefLabel xml:lang="en">Main Page</skos:prefLabel>
+		<schema:name xml:lang="en">Main Page</schema:name>
+		<wdt:P3 rdf:resource="https://famedata.org/entity/Q17"/>
+		<p:P3 rdf:resource="https://famedata.org/entity/statement/Q511-fe22cf76-441b-19a3-8cea-9b04ed31d553"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/entity/statement/Q511-fe22cf76-441b-19a3-8cea-9b04ed31d553">
+		<rdf:type rdf:resource="http://wikiba.se/ontology#Statement"/>
+		<rdf:type rdf:resource="http://wikiba.se/ontology#BestRank"/>
+		<wikibase:rank rdf:resource="http://wikiba.se/ontology#NormalRank"/>
+		<ps:P3 rdf:resource="https://famedata.org/entity/Q17"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/entity/Q17">
+		<rdf:type rdf:resource="http://wikiba.se/ontology#Item"/>
+		<rdfs:label xml:lang="en">FAMEPedia</rdfs:label>
+		<skos:prefLabel xml:lang="en">FAMEPedia</skos:prefLabel>
+		<schema:name xml:lang="en">FAMEPedia</schema:name>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/entity/P3">
+		<rdf:type rdf:resource="http://wikiba.se/ontology#Property"/>
+		<rdf:type rdf:resource="http://wikiba.se/ontology#Property"/>
+		<wikibase:propertyType rdf:resource="http://wikiba.se/ontology#WikibaseItem"/>
+		<wikibase:directClaim rdf:resource="https://famedata.org/prop/direct/P3"/>
+		<wikibase:claim rdf:resource="https://famedata.org/prop/P3"/>
+		<wikibase:statementProperty rdf:resource="https://famedata.org/prop/statement/P3"/>
+		<wikibase:statementValue rdf:resource="https://famedata.org/prop/statement/value/P3"/>
+		<wikibase:qualifier rdf:resource="https://famedata.org/prop/qualifier/P3"/>
+		<wikibase:qualifierValue rdf:resource="https://famedata.org/prop/qualifier/value/P3"/>
+		<wikibase:reference rdf:resource="https://famedata.org/prop/reference/P3"/>
+		<wikibase:referenceValue rdf:resource="https://famedata.org/prop/reference/value/P3"/>
+		<wikibase:novalue rdf:resource="https://famedata.org/prop/novalue/P3"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/prop/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/prop/statement/value/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/prop/qualifier/value/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/prop/reference/value/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/prop/direct/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/prop/statement/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/prop/qualifier/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/prop/reference/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/prop/novalue/P3">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+		<owl:complementOf rdf:nodeID="1086e1c4470bf0a461225f75b332f53e"/>
+	</rdf:Description>
+	<rdf:Description rdf:nodeID="1086e1c4470bf0a461225f75b332f53e">
+		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Restriction"/>
+		<owl:onProperty rdf:resource="https://famedata.org/prop/direct/P3"/>
+		<owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+	</rdf:Description>
+	<rdf:Description rdf:about="https://famedata.org/entity/P3">
+		<rdfs:label xml:lang="en">instance of</rdfs:label>
+		<skos:prefLabel xml:lang="en">instance of</skos:prefLabel>
+		<schema:name xml:lang="en">instance of</schema:name>
+		<schema:description xml:lang="en">that class of which this subject is a particular example and member</schema:description>
+	</rdf:Description>
+</rdf:RDF>
