@@ -613,7 +613,7 @@ def addBiographyClaims(repo='', wikisite='', item='', page='', lang=''):
 def main():
 	gdsite = pywikibot.Site('en', 'gratisdata')
 	repo = gdsite.data_repository()
-	langs = ['en'] #, 'de'
+	langs = ['simple', 'it', 'es', 'en', 'fr', 'pt'] #, 'de'
 	for lang in langs:
 		wikisite = pywikibot.Site(lang, 'gratispaideia')
 		total = 100
@@ -657,7 +657,10 @@ def main():
 				print(page.title().encode('utf-8'), 'need item', gender)
 				wtitle = page.title()
 				wtitle_ = wtitle.split('(')[0].strip()
-				searchitemurl = 'https://gratisdata.miraheze.org/w/api.php?action=wbsearchentities&search=%s&language=%s&format=xml' % (urllib.parse.quote(wtitle_), lang)
+				searchstring = lang
+				if lang == 'simple':
+					searchstring == 'en'
+				searchitemurl = 'https://gratisdata.miraheze.org/w/api.php?action=wbsearchentities&search=%s&language=%s&format=xml' % (urllib.parse.quote(wtitle_), searchstring)
 				raw = getURL(searchitemurl)
 				print(searchitemurl.encode('utf-8'))
 
