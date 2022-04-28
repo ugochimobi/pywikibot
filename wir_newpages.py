@@ -613,7 +613,7 @@ def addBiographyClaims(repo='', wikisite='', item='', page='', lang=''):
 def main():
 	gdsite = pywikibot.Site('en', 'gratisdata')
 	repo = gdsite.data_repository()
-	langs = ['simple', 'it', 'es', 'en', 'fr', 'pt'] #, 'de'
+	langs = ['en', 'it', 'es', 'simple', 'fr', 'pt'] #, 'de'
 	for lang in langs:
 		wikisite = pywikibot.Site(lang, 'gratispaideia')
 		total = 100
