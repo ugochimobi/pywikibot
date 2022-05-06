@@ -20,7 +20,7 @@ while True:
     payload = {
         'action': 'query',
         'list': 'allpages',
-        'apnamespace': 120,
+        'apnamespace': 862,
         'aplimit': 'max',
         'apcontinue': apcontinue,
         'format': 'json'
