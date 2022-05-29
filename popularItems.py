@@ -34,7 +34,7 @@ while True:
         'format': 'json',
         'rccontinue': rccontinue
     }
-    r = requests.get('https://www.wikidata.org/w/api.php', params=payload)
+    r = requests.get('https://gratisdata.miraheze.org/w/api.php', params=payload)
     data = r.json()
     for revision in data['query']['recentchanges']:
         if revision['newlen'] > revision['oldlen'] and 'user' in revision and (len(revision['tags']) == 0 or 'OAuth' not in revision['tags'][0]):
@@ -63,24 +63,24 @@ for q in sorted:
     if q in blacklist:
         continue
 
-    # check if item is not currently on [[Wikidata:Main Page/Popular]]
+    # check if item is not currently on [[Gratisdata:Main Page/Popular]]
     previousItems = []
-    r = requests.get('https://www.wikidata.org/w/api.php?action=query&prop=links&titles=Wikidata:Main%20Page/Popular&format=json')
+    r = requests.get('https://gratisdata.miraheze.org/w/api.php?action=query&prop=links&titles=Gratisdata:Main%20Page/Popular&format=json')
     data = r.json()
-    for m in data['query']['pages']['26001882']['links']:
+    for m in data['query']['pages']['3466']['links']:
         previousItems.append(m['title'])
     if q in previousItems:
         continue
 
     # check if item is not linked to an element of blacklist2
-    r = requests.get('https://www.wikidata.org/w/api.php?action=wbgetclaims&entity={}&format=json'.format(q))
+    r = requests.get('https://gratisdata.miraheze.org/w/api.php?action=wbgetclaims&entity={}&format=json'.format(q))
     data = r.json()
     if 'error' in data:
         continue
     if 'claims' in data:
-        if 'P31' in data['claims']:
-            if data['claims']['P31'][0]['mainsnak']['snaktype'] == 'value':
-                if data['claims']['P31'][0]['mainsnak']['datavalue']['value']['id'] in blacklist2:
+        if 'P3' in data['claims']:
+            if data['claims']['P3'][0]['mainsnak']['snaktype'] == 'value':
+                if data['claims']['P3'][0]['mainsnak']['datavalue']['value']['id'] in blacklist2:
                     continue
 
     # if everything is fine, add item
@@ -89,9 +89,9 @@ for q in sorted:
     # add image
     if not img:
         if 'claims' in data:
-            if 'P18' in data['claims']:
-                if data['claims']['P18'][0]['mainsnak']['snaktype'] == 'value':
-                    img = data['claims']['P18'][0]['mainsnak']['datavalue']['value']
+            if 'P386' in data['claims']:
+                if data['claims']['P386'][0]['mainsnak']['snaktype'] == 'value':
+                    img = data['claims']['P386'][0]['mainsnak']['datavalue']['value']
                     text = '<span style="float: {{dir|{{{lang|{{int:lang}}}}}|left|right}}; padding-top: 0.5em; padding-{{dir|{{{lang|{{int:lang}}}}}|right|left}}: 0.5em;">[[File:%s|100px]]</span>\n%s ({{I18n|pictured}})' % (img, text)
     i += 1
     if i == 7:
@@ -102,5 +102,5 @@ if not img:
     text = '<nowiki></nowiki>\n' + text
 text += '<span style="clear: {{dir|{{{lang|{{int:lang}}}}}|left|right}};"></span>'
 
-page = pywikibot.Page(site, 'Wikidata:Main Page/Popular')
+page = pywikibot.Page(site, 'Gratisdata:Main Page/Popular')
 page.put(text, summary='upd', minor=False)
