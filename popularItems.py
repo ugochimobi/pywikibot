@@ -8,7 +8,7 @@ import json
 import re
 from datetime import datetime, timedelta
 
-site = pywikibot.Site('gratisdata','en')
+site = pywikibot.Site('en','gratisdata')
 
 blacklist = ['Q3168','Q2688'] #sandbox, tour items
 blacklist2 = ['Q510', 'Q500', 'Q485'] #disambiguation, template, category items
